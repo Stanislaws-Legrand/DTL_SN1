@@ -9,7 +9,7 @@
     justify-content: flex-start;
     align-items: center;        
     font-size: 25px;
-    font-weight: bold; /* ajout d'une optin pour que le texte soit en gras (au cas où le <h1> serait changer en <p> plus tard) */
+    font-weight: bold; /* ajout d'une option pour que le texte soit en gras (au cas où le <h1> serait changer en <p> plus tard) */
 }
 
 .Corps {
@@ -21,21 +21,29 @@ justify-content: none;
 align-items: none;
 top: 20%;
 font-size: 35px;
-display: grid;
-grid-template-rows: auto 1fr;
+display: flex;
+flex-direction: column;
 }
 
 .texte { /* texte au-dessus des deux divs */
-    padding: 20px; /* Espace dans le texte */
+    top: 20%;
 }
 
 .divGauche { /* Style de la div à gauche dans le corps*/
     background-color: #2677a5; /* Couleur Bleu Foncé demandé par le client pour le background de la div */
+    width: 50%;
+    left: 0%;
+    height: 30%;
+    top: 25%;
 }
 
 
 .divDroite { /* Style de la div à droite dans le corps */
     background-color: #47e187; /* Couleur Vert Clair demandé par le client pour le background de la div */
+    width: 50%;
+    right: 0%;
+    width: 20%;
+    top: 25%;
 }
 
 .table { /* Style pour le tableau à l'intérieur de la div à droite */
@@ -47,4 +55,18 @@ grid-template-rows: auto 1fr;
     border: 2px solid black; /* Couleur de la bordure du tableau */
     padding: 10px;
     text-align: center;
+}
+
+.Footer { /* Bandeau Sable avec Texte Violet affiché en bas de la page */
+    background-color: #bdb76b; /* Couleur Sable demandé par le client pour le background de la div */
+    color: #5a228a; /* Couleur Violette demandé par le client pour le texte situé dans la div */
+    height: 15%;
+    width: 100%;
+    top: 80%;
+    position: absolute;
+    display: flex;              
+    flex-direction: column;     /* Les deux ligne au dessus et en dessous de ce commentaire permette affiche convenable de la div*/
+    justify-content: flex-start;
+    align-items: center;        
+    font-size: 25px;
 }
