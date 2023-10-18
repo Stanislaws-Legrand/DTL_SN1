@@ -3,23 +3,48 @@
     color: #fa0f13; /* Couleur Rouge demandé par le client pour le texte situé dans la div */
     height: 15%;
     width: 100%;
-    position: absolute;         /*|)*/
-    display: flex;              /*|)*/
-    flex-direction: column;     /*|]> Les deux au dessus et en dessous de ce commentaire permette affiche convenable de la div*/
-    justify-content: flex-start;/*|)*/ 
-    align-items: center;        /*|)*/
+    position: absolute;
+    display: flex;              
+    flex-direction: column;     /* Les deux ligne au dessus et en dessous de ce commentaire permette affiche convenable de la div*/
+    justify-content: flex-start;
+    align-items: center;        
     font-size: 25px;
     font-weight: bold; /* ajout d'une optin pour que le texte soit en gras (au cas où le <h1> serait changer en <p> plus tard) */
 }
 
 .Corps {
-background-color: #6495ed;
-height: 50%;
+background-color: #6495ed; /* Couleur Bleu Ciel demandé par le client pour le background de la div */
+height: 60%;
 width: 100%;
 position: absolute;
-display: flex;
 justify-content: none;
 align-items: none;
 top: 20%;
-font-size: 30px;
+font-size: 35px;
+display: grid;
+grid-template-rows: auto 1fr;
+}
+
+.texte { /* texte au-dessus des deux divs */
+    padding: 20px; /* Espace dans le texte */
+}
+
+.divGauche { /* Style de la div à gauche dans le corps*/
+    background-color: #2677a5; /* Couleur Bleu Foncé demandé par le client pour le background de la div */
+}
+
+
+.divDroite { /* Style de la div à droite dans le corps */
+    background-color: #47e187; /* Couleur Vert Clair demandé par le client pour le background de la div */
+}
+
+.table { /* Style pour le tableau à l'intérieur de la div à droite */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 2px solid black; /* Couleur de la bordure du tableau */
+    padding: 10px;
+    text-align: center;
 }
