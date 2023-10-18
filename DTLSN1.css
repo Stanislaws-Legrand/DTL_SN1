@@ -1,13 +1,25 @@
 .Menu { /* Bandeau Rouge Sombre avec Texte Rouge affiché en haut de la page */
-    background-color: #a6292a;
-    height: 75px;
+    background-color: #a6292a; /* Couleur Rouge Sombre demandé par le client pour le background de la div */
+    color: #fa0f13; /* Couleur Rouge demandé par le client pour le texte situé dans la div */
+    height: 15%;
     width: 100%;
-    position: absolute;
-    color: #fa0f13;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
-    font-size: 30px;
+    position: absolute;         /*|)*/
+    display: flex;              /*|)*/
+    flex-direction: column;     /*|]> Les deux au dessus et en dessous de ce commentaire permette affiche convenable de la div*/
+    justify-content: flex-start;/*|)*/ 
+    align-items: center;        /*|)*/
+    font-size: 25px;
+    font-weight: bold; /* ajout d'une optin pour que le texte soit en gras (au cas où le <h1> serait changer en <p> plus tard) */
 }
 
+.Corps {
+background-color: #6495ed;
+height: 50%;
+width: 100%;
+position: absolute;
+display: flex;
+justify-content: none;
+align-items: none;
+top: 20%;
+font-size: 30px;
+}
