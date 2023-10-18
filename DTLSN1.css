@@ -1,0 +1,13 @@
+.Menu { /* Bandeau Rouge Sombre avec Texte Rouge affiché en haut de la page */
+    background-color: #a6292a;
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    color: #fa0f13;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    font-size: 30px;
+}
+
